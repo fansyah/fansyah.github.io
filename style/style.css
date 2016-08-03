@@ -1,0 +1,23 @@
+* {padding: 0; margin: 0}
+.container {width:900px; margin:auto;}
+menu {overflow:hidden;}
+menu li {list-style:none; margin:auto;}
+menu li a{text-decoration:none; color:#000; border-right:1px solid #F00; float:left; padding:0 10px;}
+
+h1 {color:#F90; text-align:center; padding-top:20px;}
+p {margin:auto; color: #000;}
+.Name {font-size:20px;}
+
+article {overflow:hidden; padding:10px 0 20px 0;}
+article h4{padding:10px 0 10px 0;}
+article h5{padding:10px 0 10px 0;}
+article .left{float:left; width:445px;}
+article .right{float:right; width:445px;}
+article .right .form{width:420px}
+
+input[type=text]{width:300px;}
+input[type=email]{width:300px;}
+input[type=password]{width:300px;}
+textarea{width:300px;}
+
+footer {text-align:center; padding-bottom:20px;}
