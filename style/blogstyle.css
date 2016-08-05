@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+* {padding:0; margin:0; font-family: 'Reem Kufi', sans-serif;}
+
+/*header*/
+header {overflow:hidden; background:#F90; border-bottom:#999999 2px solid; height:25px;}
+header li {list-style:none; margin:auto;}
+header li a{height:25px; text-decoration:none; color:#000; float:left; padding:0 10px; font-size:14px; padding-top:2px;}
+header a:hover{background:#CCC; transition:all 0.5s ease; color:#F00;}
+
+/*-----------*/
+
+.container{margin:auto; width:800px;}
+.cdn{margin:auto;}
+.con1{margin:auto}
+.con2{margin:auto; width:100%}
+section .center {margin:30px}
+
+/*footer*/
+footer {text-align:center; padding-bottom:20px; background:#333; margin-top:10px;}
+footer p {padding-top:10px; color:#FFF; font-size:14px}
+footer a {color: #999; font-size:14px}
