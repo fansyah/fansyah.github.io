@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="file:///E|/HACKTIV8/phase-0/week-1/Day1/fansyah.github.io/style/stylenews.css" rel="stylesheet" type="text/css"/ media="all">
+<title>Hacktiv8 - News</title>
+<meta name="description" content="Hacktiv8 adalah sebuah pelatihan coding fulltime di Jakarta yang membantu pemula untuk menjadi fullstack developer dalam 12 minggu.">
+<meta name="keywords" content="hacktiv8, coding, bootcamp, javascript, web, developer">
+<meta name="author" content="Hacktiv8 sTeam">
+<link rel="icon" href="//favicon.ico" type="image/x-icon"/>
+<link href="https://fonts.googleapis.com/css?family=Reem+Kufi" rel="stylesheet">
+
+<!-- javascrift grafik -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Unduhan Aplikasi Gojek Periode 3 bln terakhir tahun 2015 '],
+          ['Januari', 32360],
+          ['Februari', 81843],
+          ['Maret', 131795],
+          ]);
+
+        var options = {
+          title: 'PT Gojek Indonesia',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+
+
+</head>
+
+<body>
+<!--- nav header --->	
+	<header>  
+    	<ul>
+  	  		<li><a href="../index.html">Home</a></li>
+        	<li><a href="">News</a></li>
+        	<li><a href="">Story</a></li>
+        	<li><a href="">Coming soon</a></li>
+    	</ul>       
+    </header>
+    
+<!--- pertama --->	
+    <section>
+    	<div class="sectionone">
+    		<h3>Siapa sih yang belum tahu Gojek?</h3>
+            <h5>| oleh Fansyah Fathurahman |</h5>
+        	<img src="../images/hgojek.jpg" width="100%" height=500px;/>            
+    	</div>
+        <div class="sectiontwo">
+        <p>Hari ini aku mau membahas sedikit tentang Gojek, siapa sih yang belum tahu Gojek? <br /> Menurut id.wikipedia.org GO-JEK merupakan sebuah perusahaan transportasi asal Indonesia yang melayani angkutan melalui jasa ojek. Perusahaan ini didirikan pada tahun 2010 di Jakarta oleh Nadiem Makarim.Layanan GO-JEK tersedia di wilayah Jabodetabek, Bali, Bandung, Surabaya, Makassar, Medan, Palembang, Semarang, Yogyakarta, dan Balikpapan. Hingga bulan Januari 2016, aplikasi GO-JEK sudah diunduh <b>sebanyak hampir 10 juta kali</b> di Google Play pada sistem operasi Android. Saat ini juga ada untuk iOS, di App Store.</p>
+		</div>    
+    </section> 
+    <hr class="garis" width="70%" >
+<!--- kedua --->    
+    <section>
+		<div class="sectionthree">
+    	<p><em>Banyak orang sekarang memilih Gojek </em> daripada pangkalan selain aman juga nyaman pastinya harganya lebih murah. <br /><blockquote>berbagai alasan dari masyarakat mengenai kenapa lebih memilih Gojek. <b>Berikut Alasannya</b></blockquote></p>      
+          <table class="table">
+               <tr>
+                   <td><div><img class="imgbunder" src="../images/maxresdefault.jpg" width="250px" height="250px" /></div></td>
+                    <td><p><b>Pertama Drivernya Gojeknya cantik-cantik :)</b></p></td>
+               </tr>
+              
+               <tr>
+                   <td><p><b>Kedua NGANGENIN.. gimana ga kangen coba </br>lihat aja driver gojeknya kaya gini.. lol</b></p></td>
+                   <td><div><img class="imgbunder" src="../images/meme gojek lucu 16.jpg" width="250px" height="250px" /></div></td>
+              </tr>              
+          </table></br>
+        <hr class="garis" width="80%"></br></br>
+        <div>
+            <h4>Untuk Para Jomblo tunggu apalagi ayoo naik Gojek setiap hari kali aja dapet Driver Gojek kaya gini nih hahaha..</h4></br></br>
+            <div><img class="imgbunder2" src="../images/Larang-Go-Jek.jpg" /></div></br></br>
+           <h5>Dengan lahirnya Gojek ini sendiri mampu meningkatkan ekonomi masyarakat menengah kebawah, menjadi lebih sejahtera,.</br>oleh karena itu semoga akan lahir dan tumbuh aplikasi-aplikasi yang mampu mendorong ekonomi masyarakat untuk kedepannya..</h5></br> 
+		</div>
+               <hr class="garis" width="80%">
+        </div>
+    </section> 
+	
+<!--- Ketiga --->    
+    <section>
+    		<div class="grafik" id="curve_chart" style="width: 900px; height: 300px"></div>
+    </section> 
+        
+<!--- Footer --->            
+    <footer>
+		<p>-- Copyright &copy; 2016 | <a href="http://www.hacktiv8.com" target="_blank">Hacktiv8</a> --</p>
+	</footer>
+
+</body>
+
+</html>
