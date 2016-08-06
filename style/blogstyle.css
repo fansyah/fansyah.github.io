@@ -10,7 +10,7 @@ header a:hover{background:#CCC; transition:all 0.5s ease; color:#F00;}
 
 /*-----------*/
 
-.container{margin:auto; width:800px;}
+.container{margin:auto; width:600px; }
 .cdn{margin:auto;}
 .con1{margin:auto}
 .con2{margin:auto; width:100%}

@@ -4,14 +4,14 @@
 * {padding:0; margin:0; font-family: 'Reem Kufi', sans-serif;}
 .garis{margin:auto;}
 /*header*/
-header {overflow:hidden; background:#F90; border-bottom:#999999 2px solid; height:25px;}
+header {overflow:hidden; background:#F90; border-bottom:#999999 2px solid; height:25px; position:fixed; width:100%;}
 header li {list-style:none; margin:auto;}
 header li a{height:25px; text-decoration:none; color:#000; float:left; padding:0 10px; font-size:14px; padding-top:2px;}
 header a:hover{background:#CCC; transition:all 0.5s ease; color:#F00;}
 
 /*section pertama*/
 
-section .sectionone {background-color:#090; text-align:center;}
+section .sectionone {background-color:#090; text-align:center; padding-top:25px;}
 section .sectionone h3{padding-top:10px; font-size:24px;}
 section .sectionone h5{padding-bottom:10px;}
 

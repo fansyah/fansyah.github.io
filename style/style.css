@@ -1,8 +1,8 @@
 * {padding:0; margin:0; font-family: 'Reem Kufi', sans-serif;}
 .container {width:100%; margin:auto; background:#F60;}
-header {overflow:hidden; background:#F90; border-bottom:#999999 2px solid; height:25px;}
+header {overflow:hidden; background:#F90; border-bottom:#999999 2px solid; height:25px;	z-index:10; width:100%; height:40px; position:fixed;}
 header li {list-style:none; margin:auto;}
-header li a{height:25px; text-decoration:none; color:#000; float:left; padding:0 10px; font-size:12px; padding-top:5px;}
+header li a{height:25px; text-decoration:none; color:#000; float:left; padding:0px 10px; font-size:12px; padding-top:14px;}
 header a:hover{background:#CCC; transition:all 0.5s ease; color:#F00;}
 
 .logomaster {margin:-500px 0 325px 0;}
