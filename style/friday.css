@@ -5,8 +5,9 @@
 .container{margin:auto; width:800px;}
 .center{padding:20px; margin:auto; text-align:center;}
 .tdcv td {text-align:center; border-bottom:medium; text-shadow:2px 0px 5px #FFF}
-.tdcv {padding:40px;}
+.tdcv {padding:80px;}
 .wd{margin-top: -30px;}
+table{padding-top:20px;}
 
 /*header*/
 header {overflow:hidden; background:#F90; border-bottom:#999999 2px solid; height:25px; position:fixed; width:100%;}

@@ -5,6 +5,7 @@ header li {list-style:none; margin:auto;}
 header li a{height:25px; text-decoration:none; color:#000; float:left; padding:0px 10px; font-size:12px; padding-top:14px;}
 header a:hover{background:#CCC; transition:all 0.5s ease; color:#F00;}
 
+
 .logomaster {margin:-500px 0 325px 0;}
 section .logo{width:100px; margin:auto}
 section .logo:hover {transition:all 1s ease; transform: rotate(360deg);}
