@@ -44,4 +44,4 @@ return: hasil luas lingkaran
 luasLingkaran(7) // pi * r^2
 menghasilkan "154 cm" */
 // Answer below
-luasLingkaran = Math.PI(7)*7*7;
+luasLingkaran = Math.PI*7*7;
