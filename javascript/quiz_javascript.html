@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="../style/quiz.css" rel="stylesheet" type="text/css"/ media="all">
+<link href="https://fonts.googleapis.com/css?family=Reem+Kufi" rel="stylesheet">
+<meta name="description" content="Hacktiv8 adalah sebuah pelatihan coding fulltime di Jakarta yang membantu pemula untuk menjadi fullstack developer dalam 12 minggu.">
+<meta name="keywords" content="hacktiv8, coding, bootcamp, javascript, web, developer">
+<meta name="author" content="Hacktiv8 sTeam">
+
+<style>
+div#test{ border:#000 1px solid; padding:10px 40px 40px 40px; }
+</style>
+<script>
+var pos = 0, test, test_status, question, choice, choices, chA, chB, chC, correct = 0;
+var questions = [
+    [ "What is 10 + 4?", "12", "14", "16", "B" ],
+	[ "What is 20 - 9?", "7", "13", "11", "C" ],
+	[ "What is 7 x 3?", "21", "24", "25", "A" ],
+	[ "What is 8 / 2?", "10", "2", "4", "C" ]
+];
+function _(x){
+	return document.getElementById(x);
+}
+function renderQuestion(){
+	test = _("test");
+	if(pos >= questions.length){
+		test.innerHTML = "<h2>You got "+correct+" of "+questions.length+" questions correct</h2>";
+		_("test_status").innerHTML = "Test Completed";
+		pos = 0;
+		correct = 0;
+		return false;
+	}
+	_("test_status").innerHTML = "Question "+(pos+1)+" of "+questions.length;
+	question = questions[pos][0];
+	chA = questions[pos][1];
+	chB = questions[pos][2];
+	chC = questions[pos][3];
+	test.innerHTML = "<h3>"+question+"</h3>";
+	test.innerHTML += "<input type='radio' name='choices' value='A'> "+chA+"<br>";
+	test.innerHTML += "<input type='radio' name='choices' value='B'> "+chB+"<br>";
+	test.innerHTML += "<input type='radio' name='choices' value='C'> "+chC+"<br><br>";
+	test.innerHTML += "<button onclick='checkAnswer()'>Submit Answer</button>";
+}
+function checkAnswer(){
+	choices = document.getElementsByName("choices");
+	for(var i=0; i<choices.length; i++){
+		if(choices[i].checked){
+			choice = choices[i].value;
+		}
+	}
+	if(choice == questions[pos][4]){
+		correct++;
+	}
+	pos++;
+	renderQuestion();
+}
+window.addEventListener("load", renderQuestion, false);
+</script>
+</head>
+<body>
+
+    <header class="headerQuiz">
+    	<ul>
+  	  		<li><a href="../index.html">Home</a></li>
+        	<li><a href="../news/first-news.html">News</a></li>
+        	<li><a href="blog/2016-08-04_first-story.html">Story</a></li>
+        	<li><a href="../friday/web-dev.html">Devlopment</a></li>
+            <li><a href="../friday/wireframes.html">Wireframe</a></li>
+            <li><a href="../friday/website-evaluation.html">Evaluation</a></li> 
+            <li><a href="../friday/web-design.html">Design</a></li>
+            <li><a href="../friday/core-values.html">Core Values</a></li> 
+            <li><a href="reflection.html">Reflection</a></li>
+            <li><a href="Thinking.html">Thinking</a></li>
+            <li><a href="https://fansyahblog.wordpress.com">Go to Blog</a></li>                                      
+    	</ul> 
+    </header>
+    
+	<section class="quizbox">
+	<h2 id="test_status"></h2>
+	<div id="test"></div>
+	</section>
+</body>
+</html>
