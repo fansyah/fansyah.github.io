@@ -1,3 +1,4 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -10,54 +11,57 @@
 <meta name="author" content="Hacktiv8 sTeam">
 
 <style>
-div#test{ border:#000 1px solid; padding:10px 40px 40px 40px; }
+div#soal{ border:#000 1px solid; padding:10px 40px 40px 40px; }
 </style>
 <script>
-var pos = 0, test, test_status, question, choice, choices, chA, chB, chC, correct = 0;
-var questions = [
-    [ "What is 10 + 4?", "12", "14", "16", "B" ],
-	[ "What is 20 - 9?", "7", "13", "11", "C" ],
-	[ "What is 7 x 3?", "21", "24", "25", "A" ],
-	[ "What is 8 / 2?", "10", "2", "4", "C" ]
+var pos = 0, soal, soal_setatus, pertanyaan, choice, choices, pilihA, pilihB, pilihC, jawaban = 0;
+var pertanyaans = [
+    [ "Angka berapa 10 + 4?", "12", "14", "16", "B" ],
+	[ "Angka berapa 20 - 9?", "7", "13", "11", "C" ],
+	[ "Angka berapa 7 x 3?", "21", "24", "25", "A" ],
+	[ "Angka berapa 8 / 2?", "10", "2", "4", "C" ]
 ];
+
 function _(x){
 	return document.getElementById(x);
 }
+
 function renderQuestion(){
-	test = _("test");
-	if(pos >= questions.length){
-		test.innerHTML = "<h2>You got "+correct+" of "+questions.length+" questions correct</h2>";
-		_("test_status").innerHTML = "Test Completed";
+	soal = _("soal");
+	if(pos >= pertanyaans.length){
+		soal.innerHTML = "<h3>Kamu mendapatkan "+jawaban+" dari "+pertanyaans.length+" pertanyaan yang sudah dijawab</h3>";
+		_("soal_setatus").innerHTML = "Pertanyaan sudah lengkap";
 		pos = 0;
-		correct = 0;
+		jawaban = 0;
 		return false;
 	}
-	_("test_status").innerHTML = "Question "+(pos+1)+" of "+questions.length;
-	question = questions[pos][0];
-	chA = questions[pos][1];
-	chB = questions[pos][2];
-	chC = questions[pos][3];
-	test.innerHTML = "<h3>"+question+"</h3>";
-	test.innerHTML += "<input type='radio' name='choices' value='A'> "+chA+"<br>";
-	test.innerHTML += "<input type='radio' name='choices' value='B'> "+chB+"<br>";
-	test.innerHTML += "<input type='radio' name='choices' value='C'> "+chC+"<br><br>";
-	test.innerHTML += "<button onclick='checkAnswer()'>Submit Answer</button>";
+	_("soal_setatus").innerHTML = "Pertanyaan "+(pos+1)+" dari "+pertanyaans.length;
+	pertanyaan = pertanyaans[pos][0];
+	pilihA = pertanyaans[pos][1];
+	pilihB = pertanyaans[pos][2];
+	pilihC = pertanyaans[pos][3];
+	soal.innerHTML = "<h3>"+pertanyaan+"</h3>";
+	soal.innerHTML += "<input type='radio' name='choices' value='A'> "+pilihA+"<br>";
+	soal.innerHTML += "<input type='radio' name='choices' value='B'> "+pilihB+"<br>";
+	soal.innerHTML += "<input type='radio' name='choices' value='C'> "+pilihC+"<br><br>";
+	soal.innerHTML += "<button onclick='cekJawaban()'>Klik Jawaban</button>";
 }
-function checkAnswer(){
+function cekJawaban(){
 	choices = document.getElementsByName("choices");
 	for(var i=0; i<choices.length; i++){
 		if(choices[i].checked){
 			choice = choices[i].value;
 		}
 	}
-	if(choice == questions[pos][4]){
-		correct++;
+	if(choice == pertanyaans[pos][4]){
+		jawaban++;
 	}
 	pos++;
 	renderQuestion();
 }
 window.addEventListener("load", renderQuestion, false);
 </script>
+
 </head>
 <body>
 
@@ -73,13 +77,21 @@ window.addEventListener("load", renderQuestion, false);
             <li><a href="../friday/core-values.html">Core Values</a></li> 
             <li><a href="reflection.html">Reflection</a></li>
             <li><a href="Thinking.html">Thinking</a></li>
+            <li><a href="quiz_javascript.html">Quiz</a></li>
             <li><a href="https://fansyahblog.wordpress.com">Go to Blog</a></li>                                      
     	</ul> 
     </header>
     
+    
 	<section class="quizbox">
-	<h2 id="test_status"></h2>
-	<div id="test"></div>
+			<img src="../images/quote-Niklaus.png" width="100%" height="200px"/>
+            <h3 id="soal_setatus"></h3>
+			<div id="soal"></div>
 	</section>
+    
+    <footer>
+		<p>-- Copyright &copy; 2016 | <a href="http://www.hacktiv8.com" target="_blank">Hacktiv8</a> --</p>
+	</footer>
+
 </body>
 </html>
