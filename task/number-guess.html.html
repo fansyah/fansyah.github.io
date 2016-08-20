@@ -19,7 +19,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">        
         
         <!-- title -->
-        <title>core values</title> 
+        <title>Event Listener</title> 
 
 <!--style submenu-->
 	  <style>
@@ -105,8 +105,8 @@
                   <ul class="dropdown-menu">
                         <li><a href="../task/quiz_javascript.html">quiz_javascript</a></li>             
                   </ul>
-              </li>              
-              
+              </li>    
+                                                               
 			  <li class="dropdown-submenu"><a class="test" tabindex="-1" href="#">Week-3<span class="caret"></span></a>
                   <ul class="dropdown-menu">
                         <li><a href="../task/rainbow-text.html">Rainbow</a></li>
@@ -115,7 +115,7 @@
                         <li><a href="../task/text-style-event.html">Text_Style</a></li>         
                   </ul>
               </li> 
-                                         
+                                           
               <li><a href="#">Week-4</a></li>
             </ul>
           </li>
@@ -136,23 +136,13 @@
 </div>
 
 <section>
-	<div class="container text-center"> <br/><br/><br/>
-    	<h2>Mengidentifikasi berbagai nilai inti yang kamu miliki dapat meningkatkan kesempatanmu untuk dapat segera sukses, baik dalam hidup maupun karir.</h1>
-    	<hr><br/><br/>
-        <div class="col-lg-12" style="padding-bottom:10px;">   
-        	<ul> 
-                <li><div class="round"><h3 style="padding-top:40px">Integritas</h3></div></li>
-                <li><div class="round"><h3 style="padding-top:40px">Kreatif</h3></div></li>
-                <li><div class="round"><h3 style="padding-top:40px">Tekad</h3></div></li>
-                <li><div class="round"><h3 style="padding-top:40px">Semangat</h3></div></li>
-                <li><div class="round"><h3 style="padding-top:40px">Tanggung Jawab</h3></div></li>
-                <li><div class="round"><h3 style="padding-top:40px">Keluarga</h3></div></li>
-            </ul>        
-        </div>
-      
-       <h4>Sebagian nilai-nilai diatas saya pilih karena sebagai pegangan saya dalam melakukan setiap tindakan dan merupakan pondasi untuk mencapai kesuksesan, dengan mempunyai integritas, tekad dan semangat serta kreatif saya yakin impian akan dicapai, tugas dan pekerjaan akan mudah diselesaikan dengan penuh tanggung jawab semua nilai-nilai tersebut sebagai perjuangan saya dalam membangun kesuksesan untuk diri dan keluarga.</h2>        
-    </div><br/><br/>
-	
+        <div class="container text-center" style="padding:15% 0px;">  
+        	<h3>A Number Guessing Game</h3>      		
+            <label for="guess">Guess a number between 1 and 5:</label><br />
+            <input type="text" id="guess" size="10" maxlength="1">
+            <input type="button" value="Guess" onclick="runGame();">
+         </div>    	
+
 </section> 
  
  
@@ -182,12 +172,33 @@ $(document).ready(function(){
   });
 });
 </script> 
+
+
+<script>
+
+            var komputer = Math.floor(Math.random() * 5) + 1;          
+            
+			function runGame() {
+                var guess = document.getElementById("guess").value;
+                //Convert the string from the text input to a number.
+                guess = parseInt(guess, 10);
+                        
+                if (guess === komputer) {
+                    alert("selamat atas kemenanganmu");
+                    komputer = Math.floor(Math.random() * 5) + 1;
+                    return;
+                }
+                
+                 if (guess > komputer) {
+                    alert("Lebih Besar");
+                    return;
+                } else {
+                    alert("Lebih Kecil");
+                }
+            }
+
+</script>
 <!--end of javascript sub menu--> 
  
 </body>
 </html>	
-	
- 
-	
-		
-

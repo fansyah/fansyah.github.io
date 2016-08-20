@@ -1,3 +1,4 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <html lang="en">
@@ -19,7 +20,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">        
         
         <!-- title -->
-        <title>core values</title> 
+        <title>Event Listener</title> 
 
 <!--style submenu-->
 	  <style>
@@ -105,8 +106,8 @@
                   <ul class="dropdown-menu">
                         <li><a href="../task/quiz_javascript.html">quiz_javascript</a></li>             
                   </ul>
-              </li>              
-              
+              </li>    
+                                                               
 			  <li class="dropdown-submenu"><a class="test" tabindex="-1" href="#">Week-3<span class="caret"></span></a>
                   <ul class="dropdown-menu">
                         <li><a href="../task/rainbow-text.html">Rainbow</a></li>
@@ -115,7 +116,7 @@
                         <li><a href="../task/text-style-event.html">Text_Style</a></li>         
                   </ul>
               </li> 
-                                         
+                                            
               <li><a href="#">Week-4</a></li>
             </ul>
           </li>
@@ -136,23 +137,36 @@
 </div>
 
 <section>
-	<div class="container text-center"> <br/><br/><br/>
-    	<h2>Mengidentifikasi berbagai nilai inti yang kamu miliki dapat meningkatkan kesempatanmu untuk dapat segera sukses, baik dalam hidup maupun karir.</h1>
-    	<hr><br/><br/>
-        <div class="col-lg-12" style="padding-bottom:10px;">   
-        	<ul> 
-                <li><div class="round"><h3 style="padding-top:40px">Integritas</h3></div></li>
-                <li><div class="round"><h3 style="padding-top:40px">Kreatif</h3></div></li>
-                <li><div class="round"><h3 style="padding-top:40px">Tekad</h3></div></li>
-                <li><div class="round"><h3 style="padding-top:40px">Semangat</h3></div></li>
-                <li><div class="round"><h3 style="padding-top:40px">Tanggung Jawab</h3></div></li>
-                <li><div class="round"><h3 style="padding-top:40px">Keluarga</h3></div></li>
-            </ul>        
-        </div>
-      
-       <h4>Sebagian nilai-nilai diatas saya pilih karena sebagai pegangan saya dalam melakukan setiap tindakan dan merupakan pondasi untuk mencapai kesuksesan, dengan mempunyai integritas, tekad dan semangat serta kreatif saya yakin impian akan dicapai, tugas dan pekerjaan akan mudah diselesaikan dengan penuh tanggung jawab semua nilai-nilai tersebut sebagai perjuangan saya dalam membangun kesuksesan untuk diri dan keluarga.</h2>        
-    </div><br/><br/>
-	
+        <div class="container text-center" style="padding:15% 0px;">
+        
+        	  <h2>Change Text Style with Event Listener</h2>
+			  <div class="col-md-12"> 
+                  <h4 data-toggle="collapse" data-target="#1" style="background:lavender;">The example below</h4>           
+                  <div id="1" class="collapse">
+                        <p id="text">the addEventListener() method to attach a click event to a button</p>
+                        
+                        <button id="myBtnBold">Make Bold</button>
+                  </div>
+                  
+                  <h4 data-toggle="collapse" data-target="#2" style="background:lavender;">The example below</h4>           
+                  <div id="2" class="collapse">
+                        <p id="text2">the addEventListener() method to attach a click event to a button</p>
+                        
+                        <button id="myBtnItalic">Make Italic</button>
+                  </div>
+                  
+                  <h4 data-toggle="collapse" data-target="#3" style="background:lavender;">The example below</h4>           
+                  <div id="3" class="collapse">
+                        <p id="text3">the addEventListener() method to attach a click event to a button</p>
+                        
+                        <button id="myBtnBI">Make Bold Italic</button>
+                        <button id="myBtnReset">Reset All</button>
+                  </div>                                    
+			  </div>	        		
+
+
+         </div>    	
+
 </section> 
  
  
@@ -182,12 +196,34 @@ $(document).ready(function(){
   });
 });
 </script> 
+
+
+<script>
+function makebold() {
+    document.getElementById("text").style.font = "bold 15px Times New Roman";
+}
+
+function makeitalic() {
+    document.getElementById("text2").style.font = "italic 15px Times New Roman";
+}
+
+function makeBI(){
+    document.getElementById("text3").style.font = "italic bold 15px Times New Roman";
+}
+
+function makeReset(){
+	document.getElementById("text").style.font = "14px Times New Roman";
+	document.getElementById("text2").style.font = "14px Times New Roman";
+    document.getElementById("text3").style.font = "14px Times New Roman";
+}
+
+document.getElementById("myBtnBold").addEventListener("click", makebold);
+document.getElementById("myBtnItalic").addEventListener("click", makeitalic);
+document.getElementById("myBtnBI").addEventListener("click", makeBI);
+document.getElementById("myBtnReset").addEventListener("click", makeReset);
+
+</script>
 <!--end of javascript sub menu--> 
  
 </body>
 </html>	
-	
- 
-	
-		
-
