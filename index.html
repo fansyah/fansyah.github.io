@@ -6,7 +6,9 @@
 		<!-- Link css dan link font -->
   		<meta charset="utf-8">
   		<meta name="viewport" content="width=device-width, initial-scale=1">
-  		<link rel="stylesheet" href="css/bootstrap.min.css">
+  		<link rel="stylesheet" href="css/bootstrap.min.css">       
+        <link rel="stylesheet" href="css/libs/animate.css">
+        
   		<script src="js/jquery.min.js"></script>
   		<script src="js/bootstrap.min.js"></script>   
                 
@@ -24,6 +26,12 @@
 
 <!--style submenu-->
 	  <style>
+	  
+    .wow:first-child {
+      visibility: hidden;
+    }	  
+	  
+	  
       .dropdown-submenu {
           position: relative;
       }
@@ -117,20 +125,31 @@
         </ul>    
       </div>
     </nav>  
- </div>
-     
-<div class="row-fluid widthbanner">
-  <h4></h4>
-</div>
+ </div>     
 
 <section>
-              <div class="row-fluid">
+              <div class="jumbotron">                      
+                            
                   <img src="images/bgimagee.png" width="100%" />	
-                  <div class="jumbotron text-center bodycolor"> 
-                  	<img src="images/hacktiv8logo.png"/>           
-                    <h1>Hacktiv-8</h1> 
-                    <p>-- Let's adventure --</p> 
-                  </div>              
+                  <div class="panel-body"> 
+                  
+                      <div class="col-md-3 wow slideInLeft data-wow-duration="5s">
+                        <img src="images/tesla1.jpg" width="100%"/>
+                      </div>
+                      
+                      <div class="col-md-3 wow slideInLeft data-wow-duration="5s">
+                        <img src="images/tesla2.jpg" width="100%"/>
+                      </div>
+                      
+                      <div class="col-md-3 wow slideInRight data-wow-duration="5s">
+                        <img src="images/tesla3.jpg" width="100%"/>
+                      </div>
+                      
+                      <div class="col-md-3 wow slideInRight data-wow-duration="5s">
+                         <img src="images/tesla4.jpg" width="100%"/>
+                      </div>                      
+                  	
+                  </div>            
               </div>          
 </section>
 
@@ -138,7 +157,7 @@
 		<div class="container-fluid">            
           <div class="container">           
               	<div class="col-sm-9">	                 	
-                  <h3>Silahkan input form dibawah ini</h3>
+                  <h4>Silahkan input form dibawah ini</h4><br/>
                   <form role="form">
                     <div class="form-group">
                       <label for="usr">Name:</label>
@@ -163,7 +182,7 @@
                     </div>
                     <div class="form-group">
                        <label for="comment">Comment:</label>
-                       <textarea class="form-control input-sm" rows="3" id="comment"></textarea>
+                       <textarea class="form-control input-sm" rows="5" id="comment"></textarea>
                    </div>
                    <div class="btn-group btn-group-justified btn-group-sm">
                       <a href="#" class="btn btn-primary">Login</a>
@@ -174,7 +193,7 @@
                </div> 
                <div class="col-sm-3">
                		 <br/>		  
-               		 <h4>#Member of tesla - Hacktiv8</h4>             	     	
+               		 <h4>#Member of tesla</h4>             	     	
                		 <div class="well well-sm">
                              <ul>
                                     <li><a href="#">Ahmadi</a></li>
@@ -204,14 +223,14 @@
        </div>  
     </div></br></br>      	
 </section> 
-
+<hr/>
 <section id="articleTeam">
 
         <div class="container-fluid text-center">
           <h1>OUR TEAM</h1>
           <p>we will transform you great web appication developer</p><br/></br>
           <div class="row">
-            <div class="col-sm-3">
+            <div class="col-sm-3 wow slideInRight data-wow-duration="5s"">
                 <div class="text-center">
                     <img src="images/team_ronald_photo.jpg" class="img-responsive img-circle center-block" width="200" height="200"/>
                     <h3>Ronald Ishak</h3>
@@ -219,19 +238,19 @@
                     <p>Mengarahkan kamu untuk memulai semangat membuat kreasi untuk dunia sekitar. Berpengalaman lebih dari 10 tahun di industri IT. Sebelumnya menjabat sebagai CTO di Gift Card Indonesia dan membuat Domikado.</p>
                 </div>
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-3 wow slideInRight data-wow-duration="5s"">
                     <img src="images/team_riza_photo.jpg" class="img-responsive img-circle center-block" width="200" height="200"/>
                     <h3>Riza Fahmi</h3>
                     <h4>CURRICULUM LEADER</h4>
                     <p>Dukungan dan bimbingannya dijamin menjadikan kamu developer yang kaya akan ilmu dan siap kerja. Berpengalaman lebih dari 10 tahun juga dalam industri IT dan Web. Sempat Sebelumnya menjabat sebagai CTO di CitizenLab.</p>                        
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-3 wow slideInLeft data-wow-duration="5s"">
                     <img src="images/team_rubi_photo.jpg" class="img-responsive img-circle center-block" width="200" height="200"/>
                     <h3>Riza Fahmi</h3>
                     <h4>DISIPLINE TEACHER</h4>
                     <p>Siap mentransformasi kamu menjadi developer yang disiplin dan berstandar internasional. Berpengalaman lebih dari 4 tahun di perusahaan lokal dan 2 tahun di perusahaan Eropa.</p>                        
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-3 wow slideInLeft data-wow-duration="5s"">
                     <img src="images/team_haidar_photo.jpg" class="img-responsive img-circle center-block" width="200" height="200"/>
                     <h3>Haidar Hanif</h3>
                     <h4>ENERGETIC TEACHER</h4>
@@ -243,21 +262,21 @@
     
 <!--- Footer --->
 <section>            
-    <footer>
-          <div class="panel-default text-center">
-                <div class="panel-footer footercolor divR">
-                <p>-- Copyright &copy; 2016 | <a href="http://www.hacktiv8.com" target="_blank">Hacktiv8</a> --</p>
-                          <a href="https://id.linkedin.com/in/fansyah-fatur-63240749"> <img src="images/linkedin.png" height="20px" width=" 20px" alt="logo linkedin"> Linkedin</a>         
-                          <a href=""> <img src="images/g+.png" height="20px" width=" 20px" alt="logo google+"> Google+</a> 
-                          <a href=""> <img src="images/twiter.png" height="20px" width=" 20px" alt="logo twitter"> Twiter</a>
-                          <a href=""> <img src="images/fb.png" height="20px" width=" 20px" alt="logo facebook"> Facebook</a> 
+          <div class="panel-footer text-center" style="background-color:#3399FF;">
+                <div class="text-center" style="color:#FFF;">
+                <p>-- Copyright &copy; 2016 | <a  style="color:#FFF;" href="http://www.hacktiv8.com" target="_blank">Hacktiv8</a> --</p>
+                          <a  style="color:#FFF;" href="https://id.linkedin.com/in/fansyah-fatur-63240749"> <img src="images/linkedin.png" height="20px" width=" 20px" alt="logo linkedin"> Linkedin</a>         
+                          <a  style="color:#FFF;" href=""> <img src="images/g+.png" height="20px" width=" 20px" alt="logo google+"> Google+</a> 
+                          <a  style="color:#FFF;" href=""> <img src="images/twiter.png" height="20px" width=" 20px" alt="logo twitter"> Twiter</a>
+                          <a  style="color:#FFF;" href=""> <img src="images/fb.png" height="20px" width=" 20px" alt="logo facebook"> Facebook</a> 
                 </div>
           </div>
-    </footer>
 </section>   
  
  
 <!--javascript sub menu-->
+
+<script src="dist/wow.js"></script>
 <script>
 $(document).ready(function(){
   $('.dropdown-submenu a.test').on("click", function(e){
@@ -266,6 +285,24 @@ $(document).ready(function(){
     e.preventDefault();
   });
 });
+
+wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       100,
+        callback:     function(box) {
+          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+        }
+      }
+    );
+    wow.init();
+    document.getElementById('moar').onclick = function() {
+      var section = document.createElement('section');
+      section.className = 'section--purple wow fadeInDown';
+      this.parentNode.insertBefore(section, this);
+    };
+
+
 </script> 
 <!--end of javascript sub menu--> 
  
